@@ -21,7 +21,7 @@
             <h1 class="pl-3">Donate Bangladesh</h1>
         </div>
         <div class="navbar-end">
-            <a class="btn"><img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">10000<p>BDT</p>
+            <a class="btn"><img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt=""><span id="balance">10000</span><p>BDT</p>
             </a>
         </div>
     </div>
@@ -43,10 +43,10 @@
                     <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/noakhali.png" alt="Album" width="500px"
                         class="p-10 rounded-[70px]" />
                 </figure>
-                <div class="card-body ">
+                <div class="card-body" id="noah">
                     <h2
                         class="flex gap-1 bg-stone-100 w-1/3 p-2 place-self-center sm:place-self-start align-center rounded-lg">
-                        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">500<p>BDT</p>
+                        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt=""><span>500</span><p>BDT</p>
                     </h2>
                     <div class="w-96 ">
 
@@ -58,10 +58,10 @@
                             the lives of those in need.</p>
                     </div>
 
-                    <input type="text" placeholder="Write Donation amount"
+                    <input type="text" placeholder="Write Donation amount" id="inputA"
                         class="input input-bordered input-primary w-full place-self-center sm:sm:w-[400px]" />
                     <div class="card-actions justify-center">
-                        <button class="btn bg-[#B4F461] w-full">Donate Now</button>
+                        <button class="btn bg-[#B4F461] w-full" onclick="updateAmount('noah', 'inputA')">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -73,10 +73,10 @@
                     <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/feni.png" alt="Album" width="500px"
                         class="p-10 rounded-[70px]" />
                 </figure>
-                <div class="card-body ">
+                <div class="card-body " id="feni">
                     <h2
                         class="flex gap-1 bg-stone-100 w-1/3 p-2 place-self-center sm:place-self-start align-center rounded-lg">
-                        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">500<p>BDT</p>
+                        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt=""><span>500</span><p>BDT</p>
                     </h2>
                     <div class="w-96 ">
 
@@ -89,10 +89,10 @@
                             donating today to assist those in urgent need.</p>
                     </div>
 
-                    <input type="text" placeholder="Write Donation amount"
+                    <input type="text" placeholder="Write Donation amount" id="inputB"
                         class="input input-bordered input-primary w-full place-self-center sm:sm:w-[400px]" />
                     <div class="card-actions justify-center">
-                        <button class="btn bg-[#B4F461] w-full">Donate Now</button>
+                        <button class="btn bg-[#B4F461] w-full" onclick="updateAmount('feni', 'inputB')">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -103,10 +103,10 @@
                     <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/quota-protest.png" alt="Album"
                         width="500px" class="p-10 rounded-[70px]" />
                 </figure>
-                <div class="card-body ">
+                <div class="card-body " id="quota">
                     <h2
                         class="flex gap-1 bg-stone-100 w-1/3 p-2 place-self-center sm:place-self-start align-center rounded-lg">
-                        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">500<p>BDT</p>
+                        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt=""><span>300</span><p>BDT</p>
                     </h2>
                     <div class="w-96 ">
 
@@ -120,10 +120,10 @@
                             brave individuals in their time of need.</p>
                     </div>
 
-                    <input type="text" placeholder="Write Donation amount"
+                    <input type="text" placeholder="Write Donation amount" id="inputC"
                         class="input input-bordered input-primary w-full place-self-center sm:sm:w-[400px]" />
                     <div class="card-actions justify-center">
-                        <button class="btn bg-[#B4F461] w-full">Donate Now</button>
+                        <button class="btn bg-[#B4F461] w-full" onclick="updateAmount('quota', 'inputC')">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,24 @@
     <!-- section history -->
 
     <!-- section modal -->
-
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 class="flex text-3xl font-bold justify-center ">Congratulations!</h3>
+            <div class="flex flex-col">
+                <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="" width="30"
+                    class="place-self-center pt-5">
+                <p class="py-4 place-self-center">Thank you for your donation</p>
+                <h4 class="py-4 place-self-center text-2xl font-bold">Successfully
+                </h4>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     <!-- section modal -->
 
     <!-- section Dont know what this is -->
