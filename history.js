@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
     donbtn.addEventListener("click", showDonations);
     hisbtn.addEventListener("click", showHistory);
 });
+
