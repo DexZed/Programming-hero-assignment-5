@@ -30,11 +30,12 @@
     <!-- section header -->
     <header id="pain">
         <div class="flex justify-center gap-5 sm:pt-20 pt-5">
-            <button class="btn bg-[#B4F461]">Donation</button><!-- color needs to change on click -->
-            <button class="btn bg-white">History</button><!-- color needs to change on click -->
+            <button id="donbtn" class="btn bg-[#B4F461]">Donation</button><!-- color needs to change on click -->
+            <button id="hisbtn" class="btn bg-white">History</button><!-- color needs to change on click -->
         </div>
     </header>
     <!-- section header -->
+
     <!-- section article card grid -->
     <section id="donations" class="flex flex-col">
         <div class="flex justify-center pt-5">
@@ -134,7 +135,15 @@
     <!-- section article card grid -->
 
     <!-- section history -->
-
+     
+    <div id="history" class="mx-20 pt-5 hidden">
+        <div class="flex flex-col rounded-2xl w-full bg-[#ffffff] shadow-xl p-3 border-2">
+            <div class="flex flex-col p-8">
+                <div class="text-xl font-bold  text-center text-[#374151] pb-6">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</div>
+                <div class=" text-base  text-center text-[#374151] font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</div>
+            </div>
+        </div>
+     </div>
     <!-- section history -->
     <!-- section blog -->
     <div id="blog" class="mx-5 pt-5 sm:mx-32 hidden">
@@ -215,6 +224,7 @@
     <!-- scripts -->
     <script src="./amount.js" defer></script>
     <script src="./view.js" defer></script>
+    <script src="./history.js"></script>
     <!-- scripts -->
 </body>
 
