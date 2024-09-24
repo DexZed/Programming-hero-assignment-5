@@ -33,5 +33,5 @@ function updateAmount(divId, inputId) {
     targetDiv.querySelector('span').textContent = currentDivAmount;
     document.getElementById('my_modal_5').showModal();
 }
-// Modal display function
+
 
