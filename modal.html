@@ -1,0 +1,22 @@
+<!-- Open the modal using ID.showModal() method -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+        <h3 class="flex text-3xl font-bold justify-center ">Congratulations!</h3>
+        <div class="flex flex-col">
+            <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="" width="30"
+                class="place-self-center pt-5">
+            <p class="py-4 place-self-center">Thank you for your donation</p>
+            <h4 class="py-4 place-self-center text-2xl font-bold">Successfully
+            </h4>
+        </div>
+        <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close Confirmation</button>
+            </form>
+        </div>
+    </div>
+</dialog>
