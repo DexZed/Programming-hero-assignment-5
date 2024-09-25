@@ -56,31 +56,41 @@
             <div class="collapse-content">
                 <p>You can select elements from the DOM using various methods provided by JavaScript. Here are a few
                     common ones: <em>getElementById</em>, <em>getElementsByClassName</em>,
-                    <em>getElementsByTagName</em>, <em>querySelector</em>, <em>querySelectorAll</em>.</p>
+                    <em>getElementsByTagName</em>, <em>querySelector</em>, <em>querySelectorAll</em>.
+                </p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 mb-2">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is the purpose of async and await in JavaScript?</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
             <div class="collapse-content">
-                <p>async and await are used to handle asynchronous code in JavaScript more easily, avoiding the use of
-                    explicit .then() and .catch() chains with promises.</p>
+                <p><b>Event delegation</b>  is a technique in which a single event listener is added to a parent element, and
+                    that listener is responsible for handling events triggered by its child elements. Instead of
+                    attaching multiple event listeners to individual child elements, event delegation allows you to take
+                    advantage of event bubbling.
+
+                    Event bubbling is when an event starts from the target element and propagates upwards through the
+                    parent elements. This approach is useful because:
+
+                    It reduces the number of event listeners in your code, leading to better performance, especially
+                    when dealing with a large number of elements and
+                    It dynamically handles events for elements that are added to the DOM after the initial page load.
+                </p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 mb-2">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What are higher-order functions in JavaScript?</div>
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-                <p>A higher-order function is a function that takes another function as an argument, returns a function,
-                    or both. This allows functions to be used as first-class citizens in JavaScript. Examples include
-                    map, filter, and reduce.</p>
+                <p> <b>Manipulating attributes</b> : You can use setAttribute, <em>getAttribute</em> , and <em>removeAttribute</em>, to manage element attributes. <b>Manipulating styles</b> : You can modify inline styles directly using the style property or by adding/removing CSS classes.</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 mb-2">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the event loop in JavaScript?</div>
             <div class="collapse-content">
-                <p> The event loop is a mechanism that allows JavaScript to perform non-blocking, asynchronous
+                <p> The <b>Event loop</b>  is a mechanism that allows JavaScript to perform non-blocking, asynchronous
                     operations by offloading tasks to the browser (or Node.js) and then waiting for the result.
                     JavaScript is single-threaded, so the event loop manages the execution of tasks and callbacks from
                     the call stack and the callback queue. It continuously checks the call stack, and if it's empty, it
