@@ -1,43 +1,102 @@
-<div id="blog" class="mx-5 pt-5 sm:mx-32">
-    <div class="flex">
-        <h2 class="text-xl font-bold p-5 sm:text-3xl"> Important FAQ </h2>
-        <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/faq.gif" alt="" width="70">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="sticky top-0 backdrop-blur-sm z-10 bg-base-100/50 pb-2">
+        <div class="navbar     sm:px-32 ">
+            <div class="navbar-start">
+
+                <a id="flipFlop" href="index.html" class="btn btn-ghost text-m bg-[#B4F461]">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/logo.png" alt="" width="30">
+                <h1 class="pl-3">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <a class="btn"><img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt=""><span
+                        id="balance">10000</span>
+                    <p>BDT</p>
+                </a>
+            </div>
+        </div>
+        <!-- section nav -->
     </div>
 
-    <div class="collapse collapse-arrow bg-base-200 mb-2">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">What is the difference between == and === in JavaScript?</div>
-        <div class="collapse-content">
-            <p>== is the loose equality operator, which compares two values after performing type conversion. === is the strict equality operator, which compares both value and type without performing any type conversion. </p>
+    <div id="blog" class="mx-5 pt-5 sm:mx-32">
+        <div class="flex">
+            <h2 class="text-xl font-bold p-5 sm:text-3xl"> Important FAQ </h2>
+            <img src="./B10A5-DOM-Quest-Build-and-Manipulate-main/assets/faq.gif" alt="" width="70">
         </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 mb-2">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">What are closures in JavaScript?</div>
-        <div class="collapse-content">
-            <p>A closure is a function that remembers and can access its outer scope even after the outer function has finished executing. This allows the function to preserve variables from its surrounding context. Closures are useful for data encapsulation and creating function factories.</p>
-        </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 mb-2">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">What is the purpose of async and await in JavaScript?</div>
-        <div class="collapse-content">
-            <p>async and await are used to handle asynchronous code in JavaScript more easily, avoiding the use of explicit .then() and .catch() chains with promises.</p>
-        </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 mb-2">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">What are higher-order functions in JavaScript?</div>
-        <div class="collapse-content">
-            <p>A higher-order function is a function that takes another function as an argument, returns a function, or both. This allows functions to be used as first-class citizens in JavaScript. Examples include map, filter, and reduce.</p>
-        </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 mb-2">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">What is the event loop in JavaScript?</div>
-        <div class="collapse-content">
-            <p> The event loop is a mechanism that allows JavaScript to perform non-blocking, asynchronous operations by offloading tasks to the browser (or Node.js) and then waiting for the result. JavaScript is single-threaded, so the event loop manages the execution of tasks and callbacks from the call stack and the callback queue. It continuously checks the call stack, and if it's empty, it processes tasks from the callback queue.</p>
-        </div>
-    </div>
 
-</div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+                <p>The <b>Document Object Model (DOM)</b> is a programming interface for web documents. It represents
+                    the structure of an HTML or XML document as a hierarchical tree where each element, attribute, and
+                    piece of text is a node in that tree. The DOM allows programming languages like JavaScript to
+                    access, manipulate, and update the content, structure, and styles of a web page dynamically.
+
+                    In simple terms, the DOM acts as a bridge between HTML and JavaScript, allowing developers to
+                    interact with and modify web pages in real time. </p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>You can select elements from the DOM using various methods provided by JavaScript. Here are a few
+                    common ones: <em>getElementById</em>, <em>getElementsByClassName</em>,
+                    <em>getElementsByTagName</em>, <em>querySelector</em>, <em>querySelectorAll</em>.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is the purpose of async and await in JavaScript?</div>
+            <div class="collapse-content">
+                <p>async and await are used to handle asynchronous code in JavaScript more easily, avoiding the use of
+                    explicit .then() and .catch() chains with promises.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What are higher-order functions in JavaScript?</div>
+            <div class="collapse-content">
+                <p>A higher-order function is a function that takes another function as an argument, returns a function,
+                    or both. This allows functions to be used as first-class citizens in JavaScript. Examples include
+                    map, filter, and reduce.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the event loop in JavaScript?</div>
+            <div class="collapse-content">
+                <p> The event loop is a mechanism that allows JavaScript to perform non-blocking, asynchronous
+                    operations by offloading tasks to the browser (or Node.js) and then waiting for the result.
+                    JavaScript is single-threaded, so the event loop manages the execution of tasks and callbacks from
+                    the call stack and the callback queue. It continuously checks the call stack, and if it's empty, it
+                    processes tasks from the callback queue.</p>
+            </div>
+        </div>
+
+    </div>
+    <section class="pt-10 ">
+        <footer class="h-48 bg-stone-200 footer">
+
+        </footer>
+    </section>
+
+    <!-- section Dont know what this is -->
+    <script src="./value.js"></script>
+</body>
+
+</html>
